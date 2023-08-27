@@ -1,8 +1,9 @@
-/*
- * clock.h
+/**
+ * @file clock.h
  *
- *  Created on: Aug 26, 2023
- *      Author: merri
+ * @author Robert Merrill
+ *
+ * @brief clock header file
  */
 
 #ifndef CLOCK_H_

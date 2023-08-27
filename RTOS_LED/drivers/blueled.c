@@ -5,8 +5,9 @@
  *
  * @brief Blue LED source file. Contains functions to turn on and off the blue led
  */
-#include <blueled.h>
+
 #include <MKL25Z4.h>
+#include "blueled.h"
 
 #define BLUE_LED_LOC 1
 

@@ -1,7 +1,8 @@
 /* Implementation of extra functions for main program */
 /* Robert Merrill */
-#include <uclib.h>
+
 #include <stdint.h>
+#include "uclib.h"
 #include "uart0_txirq.h"
 
 void delay(uint32_t some_time)

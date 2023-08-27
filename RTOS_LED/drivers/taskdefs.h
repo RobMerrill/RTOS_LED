@@ -1,3 +1,11 @@
+/**
+ * @file taskdefs.h
+ *
+ * @author Robert Merrill
+ *
+ * @brief Contains task prototypes
+ */
+
 #ifndef TASKDEFS_H
 #define TASKDEFS_H
 

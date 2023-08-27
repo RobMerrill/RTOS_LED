@@ -7,8 +7,8 @@
  * Contains the task that modifies the duty cycle of the the individual TPMs
  */
 
-#include <MKL25Z4.h>
 #include <stdint.h>
+#include <MKL25Z4.h>
 #include "i2c0.h"
 #include "taskdefs.h"
 #include "led_pwm.h"

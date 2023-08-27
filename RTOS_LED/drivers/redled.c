@@ -5,8 +5,10 @@
  *
  * @brief Red LED source file. Contains functions to turn on and off the red led
  */
-#include <redled.h>
+
 #include <MKL25Z4.h>
+#include "redled.h"
+
 
 #define RED_LED_LOC 18
 

@@ -1,9 +1,10 @@
 /* Source file for irq base tx UART0 Driver*/
 /*Robert Merrill*/
-#include <MKL25Z4.h>
-#include "uart0_txirq.h"
+
 #include <stdbool.h>
 #include <stdint.h>
+#include <MKL25Z4.h>
+#include "uart0_txirq.h"
 
 #define FBAUDHIGH 0
 #define FBAUDLOW  156 //115.2KiB

@@ -6,10 +6,10 @@
  * @brief I2C0 source file. contains function definitions, data structures and the ISR for the I2C0 interface.
  */
 
-#include "i2c0.h"
 #include <stdbool.h>
 #include <stdint.h>
-#include "MKL25Z4.h"
+#include <MKL25Z4.h>
+#include "i2c0.h"
 
 #ifndef I2C0_IRQ_PRIORITY
 #define I2C0_IRQ_PRIORITY 3

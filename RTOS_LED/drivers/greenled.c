@@ -5,8 +5,9 @@
  *
  * @brief Green LED source file. Contains functions to turn on and off the green led
  */
-#include <greenled.h>
 #include <MKL25Z4.h>
+#include "greenled.h"
+
 
 #define GREEN_LED_LOC 19
 

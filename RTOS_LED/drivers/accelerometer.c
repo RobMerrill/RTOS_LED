@@ -6,11 +6,11 @@
  * @brief accelerometer source file. Contains function to configure the Accelerometer
  * Contains to task to fetch the values of the xy and z registers for position and tilt of board.
  */
-#include "accelerometer.h"
-#include "i2c0.h"
 #include <stdbool.h>
 #include <stdint.h>
 #include <MKL25Z4.h>
+#include "accelerometer.h"
+#include "i2c0.h"
 #include "taskdefs.h"
 #include "led_pwm.h"
 

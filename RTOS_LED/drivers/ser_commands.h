@@ -8,8 +8,6 @@
 #ifndef SER_COMMANDS_H
 #define SER_COMMANDS_H
 
-#include "FreeRTOS.h"
-#include "task.h"
 
 #define CR 0x0D
 #define CMDBUF 10

@@ -12,6 +12,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "semphr.h"
+
 #define TRUE 1
 
 extern SemaphoreHandle_t i2cDataMutex;

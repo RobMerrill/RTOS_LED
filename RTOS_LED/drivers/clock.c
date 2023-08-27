@@ -1,12 +1,13 @@
-/*
- * clock.c
+/**
+ * @file clock.c
  *
- *  Created on: Aug 26, 2023
- *      Author: merri
+ * @author Robert Merrill
+ *
+ * @brief clock source file. Contains Init function for the system clock
  */
-
+#include <MKL25Z4.h>
 #include "clock.h"
-#include "MKL25Z4.h"
+
 
 void SystemClockInit(void)
 	{

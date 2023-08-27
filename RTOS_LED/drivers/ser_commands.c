@@ -7,6 +7,8 @@
  */
 
 #include <stdio.h>
+#include "FreeRTOS.h"
+#include "task.h"
 #include "ser_commands.h"
 #include "uart0_txirq.h"
 #include "taskdefs.h"
@@ -67,6 +69,7 @@ void execute_m_command(void)
 				{
 				i2c_data.zmod = false;
 				}
+			break;
 			print_string(ok_response, 4);
 		case 'S':
 		case 's':
