@@ -6,16 +6,11 @@
  * @brief Main source file. Contains initializations for interfaces, task creation and starts the scheduler.
  */
 
-#include <stdint.h>
-#include <stdbool.h>
 #include "accelerometer.h"
 #include "i2c0.h"
 #include "led_pwm.h"
 #include "taskdefs.h"
-#include "MKL25Z4.h"
-#include "FreeRTOS.h"
 #include "uart0_txirq.h"
-#include "uclib.h"
 #include "clock.h"
 
 void _disable_irq(void) { asm volatile ("cpsid i" : : : "memory");}
