@@ -1,0 +1,17 @@
+/.metadata/
+*.dtd
+*.xml
+*.properties
+*.txt
+*.cfx
+*.cproject
+*.project
+*.prefs
+*.axf
+*.map
+*.ld
+*.mk
+*.su
+*.d
+*.o
+*.readme
