@@ -23,6 +23,7 @@
 #define MAX_TOP      0x00FF
 
 SemaphoreHandle_t i2cDataMutex;
+SemaphoreHandle_t charBufferMutex;
 
 void Configure_Led_Pwm()
     {
@@ -95,4 +96,5 @@ void ModifyDutyCycleTask(void *parameters)
 void InitializeI2CDataMutex(void)
 	{
 	i2cDataMutex = xSemaphoreCreateMutex();
+	charBufferMutex = xSemaphoreCreateMutex();
 	}

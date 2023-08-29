@@ -168,21 +168,26 @@ void ReadUartTask(void *paramters)
 	{
 	while (1)
 		{
-		if (Recieve_Data_From_Uart0(&value))
+		if (xSemaphoreTake(charBufferMutex, portMAX_DELAY) == TRUE)
 			{
-			if (value == CR)
+			if (Recieve_Data_From_Uart0(&value))
 				{
-				print_string("\n", 1);
-				com.command_flag = true;
-				com.buffer[com.buf_index] = value;
-				com.cr_index = com.buf_index;
+				if (value == CR)
+					{
+					print_string("\n", 1);
+					com.command_flag = true;
+					com.buffer[com.buf_index] = value;
+					com.cr_index = com.buf_index;
+					}
+				else
+					{
+					com.buffer[com.buf_index] = value;
+					com.buf_index++;
+					}
 				}
-			else
-				{
-				com.buffer[com.buf_index] = value;
-				com.buf_index++;
-				}
+			xSemaphoreGive(charBufferMutex);
 			}
+
 		vTaskDelay(pdMS_TO_TICKS(10));
 		}
 	}

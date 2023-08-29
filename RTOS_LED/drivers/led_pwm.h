@@ -16,6 +16,7 @@
 #define TRUE 1
 
 extern SemaphoreHandle_t i2cDataMutex;
+extern SemaphoreHandle_t charBufferMutex;
 void Configure_Led_Pwm();
 void InitializeI2CDataMutex(void);
 
